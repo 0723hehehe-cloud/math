@@ -196,3 +196,51 @@ mjx-container:not([display="true"]),
 
 
 
+
+/* =======================================================
+    ✨ 公式字号、间距与“呼吸感”极致排版优化 (Math Spacing)
+   ======================================================= */
+
+/* 行内公式 ($...$) 与前后中文文本解耦留白 */
+.markdown-rendered .math-inline,
+.markdown-preview-view .math-inline,
+mjx-container:not([display="true"]),
+.katex:not(.katex-display) {
+  font-size: 1.05em !important;
+  margin: 0 4px !important;
+  padding: 0 2px !important;
+  vertical-align: -0.12em !important;
+  line-height: 1.2 !important;
+}
+
+/* 块级公式 ($$...$$) 独立展维与垂直黄金留白 */
+.markdown-rendered .math-block,
+.markdown-preview-view .math-block,
+.cm-embed-block.cm-math-panel,
+.cm-embed-block,
+.math-block,
+mjx-container[display="true"],
+.katex-display {
+  margin-top: 1.4em !important;
+  margin-bottom: 1.4em !important;
+  padding: 0.6em 0 !important;
+  font-size: 1.15em !important;
+  line-height: 1.4 !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* 分式与上下标呼吸感 */
+mjx-frac {
+  padding: 0 2px !important;
+}
+
+mjx-sub, mjx-sup {
+  font-size: 0.82em !important;
+}
+
+/* 行内公式所在段落行高拉宽 */
+.markdown-rendered p:has(.math-inline),
+.markdown-rendered li:has(.math-inline) {
+  line-height: 1.95 !important;
+}
