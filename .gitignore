@@ -1,0 +1,5 @@
+.obsidian/plugins/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+*.tmp

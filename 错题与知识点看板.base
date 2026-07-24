@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.folder.contains("错题本") || file.folder.contains("知识点")
+properties:
+  type:
+    displayName: 类型
+  tags:
+    displayName: 标签
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - type
+      - tags
