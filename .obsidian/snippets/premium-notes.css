@@ -177,4 +177,22 @@ mjx-container:not([display="true"]),
   color: var(--text-normal) !important;
 }
 
+/* =======================================================
+    🔒 纯净只读只看模式 (Strict Reading Mode - Locked Rendering)
+   ======================================================= */
+/* 隐藏浮动编辑工具栏与悬浮按钮 */
+.hover-popover,
+.cm-toolbar,
+.obsidian-editor-toolbar,
+.canvas-node-toolbar {
+  display: none !important;
+}
+
+/* 渲染卡片全固定，阻止源码暴露 */
+.markdown-rendered .callout,
+.markdown-rendered .math-block {
+  user-select: text !important;
+}
+
+
 
