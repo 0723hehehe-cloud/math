@@ -21,33 +21,24 @@ tags:
 > 本题的核心技巧是：**“同乘 $e^y$ 凑全微分 $(e^y)' = e^y y'$，将非线性微分方程转化为一阶线性微分方程”**。
 > 
 > ### 1. 两边同乘 $e^y$ 凑导数
-> 给原方程 $y' + 1 = e^{-y} \sin x$ 两边同时乘以 $e^y$（由于 $e^y > 0$，恒成立）：
-> $\displaystyle e^y y' + e^y = \sin x$
+> 给原方程 $y' + 1 = e^{-y} \sin x$ 两边同时乘以 $e^y$（由于 $e^y > 0$，恒成立）： $\displaystyle e^y y' + e^y = \sin x$
 > 
-> 注意到复合函数求导公式 $\frac{d}{dx}(e^y) = e^y y'$，方程可变形为：
-> $\displaystyle \frac{d}{dx}(e^y) + e^y = \sin x$
+> 注意到复合函数求导公式 $\frac{d}{dx}(e^y) = e^y y'$，方程可变形为： $\displaystyle \frac{d}{dx}(e^y) + e^y = \sin x$
 > 
 > ### 2. 换元转化为标准一阶线性微分方程
-> 令 $u = e^y$，则 $u' = e^y y'$，方程化为关于 $u(x)$ 的标准一阶线性微分方程：
-> $\displaystyle u' + u = \sin x$
+> 令 $u = e^y$，则 $u' = e^y y'$，方程化为关于 $u(x)$ 的标准一阶线性微分方程： $\displaystyle u' + u = \sin x$
 > 
-> 积分因子为 $\mu(x) = e^{\int 1 \, dx} = e^x$。两边同乘 $e^x$ 得：
-> $\displaystyle (e^x u)' = e^x \sin x$
+> 积分因子为 $\mu(x) = e^{\int 1 \, dx} = e^x$。两边同乘 $e^x$ 得： $\displaystyle (e^x u)' = e^x \sin x$
 > 
 > ### 3. 积分求解 $u(x)$ 倒推 $y(x)$
-> 两边对 $x$ 积分：
-> $\displaystyle e^x u = \int e^x \sin x \, dx$
-> 利用标准积分公式 $\int e^x \sin x \, dx = \frac{1}{2} e^x (\sin x - \cos x) + C$：
-> $\displaystyle e^x u = \frac{1}{2} e^x (\sin x - \cos x) + C$
+> 两边对 $x$ 积分： $\displaystyle e^x u = \int e^x \sin x \, dx$
+> 利用标准积分公式 $\int e^x \sin x \, dx = \frac{1}{2} e^x (\sin x - \cos x) + C$： $\displaystyle e^x u = \frac{1}{2} e^x (\sin x - \cos x) + C$
 > 
-> 两边同除以 $e^x$ 得：
-> $\displaystyle u = \frac{1}{2}(\sin x - \cos x) + C e^{-x}$
+> 两边同除以 $e^x$ 得： $\displaystyle u = \frac{1}{2}(\sin x - \cos x) + C e^{-x}$
 > 
-> 将 $u = e^y$ 代回：
-> $\displaystyle e^y = \frac{1}{2}(\sin x - \cos x) + C e^{-x}$
+> 将 $u = e^y$ 代回： $\displaystyle e^y = \frac{1}{2}(\sin x - \cos x) + C e^{-x}$
 > 
-> 或显式写为：
-> $\displaystyle y = \ln \left[ \frac{1}{2}(\sin x - \cos x) + C e^{-x} \right]$
+> 或显式写为： $\displaystyle y = \ln \left[ \frac{1}{2}(\sin x - \cos x) + C e^{-x} \right]$
 > 
 > 填空题答案为 **$e^y = \frac{1}{2}(\sin x - \cos x) + C e^{-x}$**（或其对数显式形式）。
 
