@@ -31,6 +31,9 @@
 │       ├── 02-一元函数微分学/
 │       └── 03-一元函数积分学/
 ├── 📂 知识点/                    # 基础概念、定理与定义
+├── 📂 skills/                    # 自动化 AI Skills 体系
+│   ├── 🤖 obsidian-qa-assistant/ # 错题/知识点自动入库、校验与排版 Skill
+│   └── 🤖 math-concept-summarizer/# 《基础30讲》跨章节题型串联与复盘 Skill
 └── 📂 .obsidian/                 # Obsidian 配置、插件与 CSS 片段
     └── snippets/
         └── premium-notes.css     # 侧边栏莫兰迪 3 级配色与排版样式
