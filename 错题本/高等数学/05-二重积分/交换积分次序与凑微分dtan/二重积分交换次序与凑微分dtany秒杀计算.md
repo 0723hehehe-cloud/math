@@ -23,7 +23,7 @@ tags:
 
 > [!success] 解析与答案
 > 1. **交换积分次序（画图换限）**：
->    原区域 $D: \\begin{{cases}} 0 \\le x \\le 1 \\\\ \\arctan x \\le y \\le \\frac{{\\pi}}{{4}} \\end{{cases}} \\iff \\begin{{cases}} 0 \\le y \\le \\frac{{\\pi}}{{4}} \\\\ 0 \\le x \\le \\tan y \\end{{cases}}$。
+>    原区域 $D: \\begin{{cases}} 0 \\le x \\le 1 \\\\ \\arctan x \\le y \\le \\frac{{\\pi}}{{4}} \\end{{cases}} \ff \\begin{{cases}} 0 \\le y \\le \\frac{{\\pi}}{{4}} \\\\ 0 \\le x \\le \\tan y \\end{{cases}}$。
 >    
 > 2. **先算内层对 $x$ 的积分**：
 >    $$\\int_0^{{\\tan y}} \\frac{{1}}{{3}} x^{{-\\frac{{2}}{{3}}}} dx = \\left[ x^{{\\frac{{1}}{{3}}}} \\right]_0^{{\\tan y}} = (\\tan y)^{{\\frac{{1}}{{3}}}}$$
@@ -37,7 +37,7 @@ tags:
 > [!warning] 易错点 & 核心考点
 > ⚠️ **避坑死穴与高频恒等式**：
 > 1. **$\\csc 2y$ 凑微分公式**：遇 $\\csc 2y \\cdot f(\tan y)$ 必用 $\\csc 2y \, dy = \frac{1}{2\tan y} d(\tan y)$！
-> 2. **反三角函数换限**：$y = \arctan x \implies x = \tan y$（注意取值范围 $y \in [0, \pi/4]$）。
+> 2. **反三角函数换限**：$y = \arctan x mplies x = \tan y$（注意取值范围 $y n [0, \pi/4]$）。
 
 
 ![题目图片](file:///D:/ob/考研数学/.images/media__1785374017615.png)

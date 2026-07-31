@@ -6,7 +6,7 @@ tags:
 # 椭圆区域广义极坐标与雅可比行列式J=abr计算二重积分
 
 > [!question] 题目
-> 设 $D = \{(x,y) \mid 4x^2 + y^2 < 1, \, x \ge 0, \, y \ge 0\}$，则积分 $I = \i\int_D (1 - 12x^2 - y^2) dxdy = \text{______}$。
+> 设 $D = \{(x,y) \mid 4x^2 + y^2 < 1, \, x \ge 0, \, y \ge 0\}$，则积分 $I = i\int_D (1 - 12x^2 - y^2) dxdy = \text{______}$。
 >
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785499842986.png)
 
@@ -14,7 +14,7 @@ tags:
 > 1. **广义极坐标代换**：
 >    对椭圆 $4x^2 + y^2 < 1$（即 $\frac{x^2}{(1/2)^2} + y^2 < 1$），令 $x = \frac{1}{2} r \cos \theta, \, y = r \sin \theta$；
 > 2. **雅可比行列式微元**：
->    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r \implies dxdy = \frac{1}{2}r \, dr d\theta$$
+>    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r mplies dxdy = \frac{1}{2}r \, dr d\theta$$
 > 3. **极速积为 0**：
 >    被积函数 $1 - 12x^2 - y^2 = 1 - r^2(2+\cos 2\theta)$，积分结果极速得出 **$0$**！
 

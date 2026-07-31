@@ -14,9 +14,9 @@ tags:
 
 > [!tip] ⚡ 秒杀法宝：【两端求积分 + 平移换元 + 凑微分 $dg(y)$】
 > 1. **平均值解码**：$\bar{{f}} = \int_0^1 f(x) dx = \frac{{1}}{{2}}$；
-> 2. **两端求积分**：$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = 1 \implies \frac{{1}}{{2}} - a I = 1 \implies a I = -\frac{{1}}{{2}}$；
+> 2. **两端求积分**：$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = 1 mplies \frac{{1}}{{2}} - a I = 1 mplies a I = -\frac{{1}}{{2}}$；
 > 3. **内层平移换元**：交换次序后内层 $\int_0^y f(y-x) dx \xrightarrow{{t=y-x}} \int_0^y f(t) dt$；
-> 4. **变限积分凑微分**：设 $g(y) = \int_0^y f(t) dt \implies f(y) dy = dg(y)$！
+> 4. **变限积分凑微分**：设 $g(y) = \int_0^y f(t) dt mplies f(y) dy = dg(y)$！
 >    $$I = \int_0^1 g(y) dg(y) = \frac{{1}}{{2}} g^2(1) = \frac{{1}}{{2}} \left(\frac{{1}}{{2}}\right)^2 = \frac{{1}}{{8}}$$
 >    瞬间得出 $a = -4$！
 
@@ -31,23 +31,23 @@ tags:
 >    对 $f(x) - a \int_x^1 f(y)f(y-x) dy = 1$ 两端求积分：
 >    $$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = \int_0^1 1 \, dx = 1$$
 >    设 $I = \int_0^1 dx \int_x^1 f(y)f(y-x) dy$，则有：
->    $$\frac{{1}}{{2}} - a I = 1 \implies a I = -\frac{{1}}{{2}}$$
+>    $$\frac{{1}}{{2}} - a I = 1 mplies a I = -\frac{{1}}{{2}}$$
 >
 > 2. **交换积分次序与平移换元**：
 >    交换次序为先 $x$ 后 $y$：
 >    $$I = \int_0^1 dy \int_0^y f(y)f(y-x) dx = \int_0^1 f(y) dy \int_0^y f(y-x) dx$$
->    内层令 $t = y - x \implies dx = -dt$：
+>    内层令 $t = y - x mplies dx = -dt$：
 >    $$\int_0^y f(y-x) dx = \int_0^y f(t) dt$$
 >    故：
 >    $$I = \int_0^1 f(y) \left[ \int_0^y f(t) dt \right] dy$$
 >
 > 3. **凑微分计算 $I$**：
->    令 $g(y) = \int_0^y f(t) dt \implies dg(y) = f(y) dy$。
+>    令 $g(y) = \int_0^y f(t) dt mplies dg(y) = f(y) dy$。
 >    $g(0) = 0, g(1) = \int_0^1 f(t) dt = \frac{{1}}{{2}}$。
 >    $$I = \int_0^1 g(y) \, dg(y) = \left[ \frac{{1}}{{2}} g^2(y) \right]_0^1 = \frac{{1}}{{2}} \left(\frac{{1}}{{2}}\right)^2 = \frac{{1}}{{8}}$$
 >
 > 4. **求解常数 $a$**：
->    $$a \times \frac{{1}}{{8}} = -\frac{{1}}{{2}} \implies a = -4$$
+>    $$a \times \frac{{1}}{{8}} = -\frac{{1}}{{2}} mplies a = -4$$
 
 > [!warning] 易错点 & 核心考点
 > ⚠️ **避坑死穴与高频模型**：
