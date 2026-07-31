@@ -7,9 +7,9 @@ tags:
 
 > [!question] 题目
 > 设 $D: -1 \le x \le 0, \, 1 - \sqrt{1-x^2} \le y \le -x$，则
-> $$I = \iint_D \frac{dxdy}{\sqrt{x^2+y^2} \sqrt{4-x^2-y^2}} = \text{______}$$
+> $$I = \i\int_D \frac{dxdy}{\sqrt{x^2+y^2} \sqrt{4-x^2-y^2}} = \text{______}$$
 >
-> ![](file:///D:/ob/考研数学/.images/media__1785501227766.png)
+> ![题目图片](file:///D:/ob/考研数学/.images/media__1785377023961.png)
 
 > [!tip] ⚡ 秒杀法宝：【反三角主值范围 + 负坐标轴极坐标方程】
 > 1. **$rcsin(\sin 	heta)$ 的第二象限主值**：当 $	heta \in [\frac{3\pi}{4}, \pi]$ 在第二象限时，必须使用诱导公式化简为 **$rcsin(\sin 	heta) = \pi - 	heta$**（切勿盲目脱去符号写成 $	heta$）！

@@ -8,9 +8,9 @@ tags:
 > [!question] 题目
 > 设 $f(x)$ 是 $[0,1]$ 上的连续函数且其在 $[0,1]$ 上的平均值 $\bar{{f}} = \frac{{1}}{{2}}$，满足 $f(x) + a \int_1^x f(y) f(y-x) dy = 1$，求常数 $a$ 的值。
 >
-> ![](file:///D:/ob/考研数学/.images/media__1785501227766.png)
+> ![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
 
-![](file:///D:/ob/考研数学/.images/media__1785501054967.png)
+![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
 
 > [!tip] ⚡ 秒杀法宝：【两端求积分 + 平移换元 + 凑微分 $dg(y)$】
 > 1. **平均值解码**：$\bar{{f}} = \int_0^1 f(x) dx = \frac{{1}}{{2}}$；

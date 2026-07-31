@@ -38,3 +38,6 @@ tags:
 > ⚠️ **避坑死穴与高频恒等式**：
 > 1. **$\\csc 2y$ 凑微分公式**：遇 $\\csc 2y \\cdot f(\tan y)$ 必用 $\\csc 2y \, dy = \frac{1}{2\tan y} d(\tan y)$！
 > 2. **反三角函数换限**：$y = \arctan x \implies x = \tan y$（注意取值范围 $y \in [0, \pi/4]$）。
+
+
+![题目图片](file:///D:/ob/考研数学/.images/media__1785374017615.png)

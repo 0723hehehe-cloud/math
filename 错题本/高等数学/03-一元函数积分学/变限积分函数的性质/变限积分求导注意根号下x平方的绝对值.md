@@ -11,7 +11,7 @@ tags:
 
 > [!question] 题目
 > 若函数 $y(x) = \int_2^{x^2} e^{-\sqrt{t}} dt$，则 $\left.\frac{d^2 y}{dx^2}\right|_{x=-1} =$ ________。
-> ![](file:///C:/Users/29830/.gemini/antigravity/brain/c9cf0d6f-e5bd-41b5-a12e-9f0096b8af5a/media__1784772446145.png)
+> ![题目图片](file:///D:/ob/考研数学/.images/media__1784772446145.png)
 
 > [!success] 解析与答案
 > **相关知识点**: [[变限积分函数的性质]]

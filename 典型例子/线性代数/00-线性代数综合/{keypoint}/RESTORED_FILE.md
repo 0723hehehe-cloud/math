@@ -63,7 +63,7 @@ def clean_latex_blanks(text):
         return text
     text = re.sub(r'\\underline\{\\hspace\{[^}]+\}\}', '______', text)
     text = re.sub(r'\\underline\{[^}]*\}', '______', text)
-    text = re.sub(r'(?<!\\)\bint_', r'\\int_', text)
+    text = re.sub(r'(?<!\\)\b\int_', r'\\int_', text)
     text = re.sub(r'(?<!\\)\bint\^', r'\\int^', text)
     text = re.sub(r'(?<!\\)\bint\{', r'\\int{', text)
     text = re.sub(r'f\(t\),dt', r'f(t) dt', text)
