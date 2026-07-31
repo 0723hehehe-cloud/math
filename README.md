@@ -1,3 +1,9 @@
+---
+type: README.md
+tags:
+  - README
+---
+
 # 📐 考研数学二高效复习与错题复盘系统 (Obsidian Vault)
 
 > 基于 Obsidian 构建的 2026 考研数学二结构化知识库、错题本与《基础30讲》专题复盘体系。
