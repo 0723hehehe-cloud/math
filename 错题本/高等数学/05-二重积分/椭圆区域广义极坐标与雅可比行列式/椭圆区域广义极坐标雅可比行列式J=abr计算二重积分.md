@@ -8,7 +8,7 @@ tags:
 # 椭圆区域广义极坐标与雅可比行列式J=abr计算二重积分
 
 > [!question] 题目
-> 设 $D = \{(x,y) \mid 4x^2 + y^2 < 1, \, x \ge 0, \, y \ge 0\}$，则积分 $I = i\int_D (1 - 12x^2 - y^2) dxdy = \text{______}$。
+> 设 $D = \{(x,y) \mid 4x^2 + y^2 < 1, \, x \ge 0, \, y \ge 0\}$，则积分 $I = \iint_D (1 - 12x^2 - y^2) dxdy = \text{______}$。
 >
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785499842986.png)
 

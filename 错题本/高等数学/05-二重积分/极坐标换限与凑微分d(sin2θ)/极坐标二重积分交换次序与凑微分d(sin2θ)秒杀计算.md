@@ -9,7 +9,7 @@ tags:
 
 > [!question] 题目
 > 设有界区域 $D$ 是由圆 $x^2 + y^2 = 1$ 和直线 $y = x$ 以及 $X$ 轴所围成的在第一象限的图形，计算二重积分：
-> $$I = i\int_D e^{(x+y)^2} (x^2 - y^2) dxdy$$
+> $$I = \iint_D e^{(x+y)^2} (x^2 - y^2) dxdy$$
 >
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785498465403.png)
 
