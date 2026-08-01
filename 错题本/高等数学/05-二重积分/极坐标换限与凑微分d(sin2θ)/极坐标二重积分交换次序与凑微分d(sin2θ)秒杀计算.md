@@ -38,7 +38,7 @@ tags:
 >
 > 4. **外层求积分得出结果**：
 >    $$I = \int_0^1 r^3 \cdot \frac{1}{2r^2} (e^{2r^2} - e^{r^2}) dr = \frac{1}{2} \int_0^1 r (e^{2r^2} - e^{r^2}) dr$$
->    令 $u = r^2 mplies du = 2r dr$：
+>    令 $u = r^2 \implies du = 2r dr$：
 >    $$I = \frac{1}{4} \int_0^1 (e^{2u} - e^u) du = \frac{1}{4} \left[ \frac{1}{2} e^{2u} - e^u \right]_0^1 = \frac{(e-1)^2}{8}$$
 
 > [!warning] 易错点 & 核心考点

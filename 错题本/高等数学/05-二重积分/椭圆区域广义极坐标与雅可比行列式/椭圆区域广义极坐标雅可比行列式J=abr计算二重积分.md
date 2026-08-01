@@ -17,7 +17,7 @@ rac{1}{2}r$ 秒杀】
 > 1. **广义极坐标代换**：
 >    对椭圆 $4x^2 + y^2 < 1$（即 $\frac{x^2}{(1/2)^2} + y^2 < 1$），令 $x = \frac{1}{2} r \cos \theta, \, y = r \sin \theta$；
 > 2. **雅可比行列式微元**：
->    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r mplies dxdy = \frac{1}{2}r \, dr d\theta$$
+>    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r \implies dxdy = \frac{1}{2}r \, dr d\theta$$
 > 3. **极速积为 0**：
 >    被积函数 $1 - 12x^2 - y^2 = 1 - r^2(2+\cos 2\theta)$，积分结果极速得出 **$0$**！
 

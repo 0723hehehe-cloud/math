@@ -25,8 +25,8 @@ tags:
 > [!success] 解析与答案
 > 1. **画图与极坐标换限**：
 >    - 区域 $D$ 在第二象限，角度范围为 $\frac{3\pi}{4} \le \theta \le \pi$。
->    - 下边界 $y = 1 - \sqrt{1-x^2} ff x^2 + (y-1)^2 = 1 mplies r = 2\sin \theta$。
->    - 上边界为直线 $x = -1 mplies r = -\sec \theta$。
+>    - 下边界 $y = 1 - \sqrt{1-x^2} ff x^2 + (y-1)^2 = 1 \implies r = 2\sin \theta$。
+>    - 上边界为直线 $x = -1 \implies r = -\sec \theta$。
 >    故极坐标范围为：
 >    $$\frac{3\pi}{4} \le \theta \le \pi, \quad 2\sin \theta \le r \le -\sec \theta$$
 >
