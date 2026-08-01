@@ -243,3 +243,66 @@ mark {
     margin: 1.7em auto !important;
   }
 }
+
+/* Extra spacious math reading rhythm. */
+.markdown-rendered p:has(mjx-container[display="true"]),
+.markdown-preview-view p:has(mjx-container[display="true"]),
+.markdown-rendered p:has(.math-block),
+.markdown-preview-view p:has(.math-block),
+.markdown-rendered li:has(mjx-container[display="true"]),
+.markdown-preview-view li:has(mjx-container[display="true"]) {
+  margin-top: 1.25em !important;
+  margin-bottom: 2em !important;
+}
+
+.markdown-rendered .math-block,
+.markdown-preview-view .math-block,
+.markdown-rendered mjx-container[display="true"],
+.markdown-preview-view mjx-container[display="true"],
+.markdown-source-view .cm-embed-block.cm-math-panel,
+.markdown-source-view .cm-embed-block.cm-math-block {
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
+  padding-top: 1.2em !important;
+  padding-bottom: 1.2em !important;
+  font-size: 1.26em !important;
+  line-height: 1.8 !important;
+}
+
+.markdown-rendered p,
+.markdown-rendered li {
+  line-height: 2.05 !important;
+}
+
+.markdown-rendered p {
+  margin-top: 1.25em !important;
+  margin-bottom: 1.4em !important;
+}
+
+.markdown-rendered li {
+  margin-top: 0.8em !important;
+  margin-bottom: 1.35em !important;
+}
+
+.markdown-rendered li > p {
+  margin-top: 0.9em !important;
+  margin-bottom: 1.2em !important;
+}
+
+.markdown-rendered h3 {
+  margin-top: 3em !important;
+  margin-bottom: 1.1em !important;
+}
+
+@media (max-width: 700px) {
+  .markdown-rendered .math-block,
+  .markdown-preview-view .math-block,
+  .markdown-rendered mjx-container[display="true"],
+  .markdown-preview-view mjx-container[display="true"] {
+    margin-top: 2.2em !important;
+    margin-bottom: 2.2em !important;
+    padding-top: 0.9em !important;
+    padding-bottom: 0.9em !important;
+    font-size: 1.14em !important;
+  }
+}
