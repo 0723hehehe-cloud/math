@@ -1,274 +1,245 @@
-/* 美化 Obsidian Callouts */
-.callout {
-  border-radius: 12px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.01) !important;
-  border-left-width: 5px !important;
-  padding: 14px 18px !important;
-  margin-bottom: 1.5em !important;
-  transition: all 0.2s ease !important;
+/* Comfortable reading layout for the math vault. */
+
+/* Keep the reading column focused without squeezing long formulas. */
+.markdown-reading-view .markdown-preview-sizer,
+.markdown-source-view.mod-cm6 .cm-content {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 3.25rem 6rem !important;
 }
 
-/* 悬浮微动画 */
-.callout:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.02) !important;
-}
-
-/* 渐变高亮样式 */
-mark {
-  background: linear-gradient(120deg, rgba(255, 224, 130, 0.4) 0%, rgba(255, 213, 79, 0.7) 100%) !important;
-  border-radius: 4px !important;
-  padding: 1px 5px !important;
-  color: inherit !important;
-  font-weight: bold !important;
-}
-
-
-
-/* =======================================================
-    32寸大屏黄金人体工学阅读宽度 (Ergonomic 1180px Width)
-   ======================================================= */
-.markdown-source-view.mod-cm6 .cm-content,
-.markdown-source-view.mod-cm6 .cm-line,
-.markdown-preview-sizer,
 .markdown-rendered,
-.cm-sizer,
-.workspace-leaf-content[data-type="markdown"] .view-content {
-  max-width: 1180px !important;
-  width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+.markdown-source-view.mod-cm6 .cm-content {
+  font-size: 16px !important;
 }
 
-/* 确保 Callout 与长公式能完全展宽舒展，不再折行截断 */
-.callout,
-.callout-content {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.markdown-rendered .math-block,
-.markdown-preview-view .math-block,
-.cm-embed-block {
-  max-width: 100% !important;
-  width: 100% !important;
-  overflow-x: auto !important;
-}
-
-
-/* =======================================================
-    正文排版与数学公式“呼吸感”优化 (Typography & Math Spacing)
-   ======================================================= */
-
-/* 1. 全局正文行高与段间距 */
 .markdown-rendered p,
 .markdown-rendered li,
-.markdown-preview-view p,
-.markdown-preview-view li {
-  line-height: 1.85 !important;
-  margin-top: 0.6em !important;
-  margin-bottom: 0.8em !important;
-  letter-spacing: 0.015em;
-}
-
-/* 2. 块级数学公式 ($$...$$) 放大放大放大、纯净留白（清晰大字） */
-.markdown-rendered .math-block,
-.markdown-preview-view .math-block,
-.cm-embed-block.cm-math-panel,
-.cm-embed-block,
-.math-block,
-mjx-container[display="true"],
-.katex-display {
-  margin-top: 1.2em !important;
-  margin-bottom: 1.2em !important;
-  padding: 0.4em 0 !important;
-  font-size: 1.12em !important; /* 适度微调块级公式字号 */
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-left: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-/* 列表内的公式调整 */
-li .math-block,
-ul .math-block,
-ol .math-block {
-  margin-top: 0.6em !important;
-  margin-bottom: 0.6em !important;
-}
-
-.theme-dark .markdown-rendered .math-block,
-.theme-dark .markdown-preview-view .math-block {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* 3. 行内公式 ($...$) 适度放大并增加左右微留白 */
-.markdown-rendered .math-inline,
-.markdown-preview-view .math-inline,
-mjx-container:not([display="true"]),
-.katex:not(.katex-display) {
-  font-size: 1.04em !important; /* 精细调整行内公式字号 */
-  padding: 0 3px !important;
-  margin: 0 2px !important;
-}
-
-/* 4. Callout 卡片内部排版呼吸感增强 */
-.callout-content {
-  padding-top: 6px !important;
-  padding-bottom: 6px !important;
-}
-
-.callout-content > p {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.8em !important;
-  line-height: 1.8 !important;
-}
-
-.callout-content ul,
-.callout-content ol {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.8em !important;
-  padding-left: 1.4em !important;
-}
-
-.callout-content li {
-  margin-bottom: 0.5em !important;
-  line-height: 1.75 !important;
-}
-
-
-/* =======================================================
-    Obsidian 左侧文件树三级区分（使用主题内置色彩变量，完美适配明暗模式）
-   ======================================================= */
-
-/* --- 【一级：章节及分组】(如: 01-函数极限与连续、01-函数及其性质) --- */
-/* Level 3 & 4 Folders */
-.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner,
-.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner {
-  font-size: 13.5px !important;
-  font-weight: 600 !important;
-  color: var(--color-cyan) !important;
-}
-
-/* --- 【二级：考点目录】(如: 反函数、有界性、导数定义) --- */
-/* Level 5 Folders */
-.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner {
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  color: var(--color-orange) !important;
-}
-
-/* --- 【三级：具体细分错题】(所有的 md 笔记文件，如: 求对数反函数及定义域) --- */
-.nav-file-title .nav-file-title-content, 
-.tree-item.nav-file > .tree-item-self .tree-item-inner {
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  color: var(--color-purple) !important;
-}
-
-/* --- 【根目录及学科层级】(保持中立默认色，如: 错题本、01-高等数学) --- */
-.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner,
-.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner {
-  font-size: 14.5px !important;
-  font-weight: 700 !important;
-  color: var(--text-normal) !important;
-}
-
-/* =======================================================
-    🔒 纯净只读只看模式 (Strict Reading Mode - Locked Rendering)
-   ======================================================= */
-/* 隐藏浮动编辑工具栏与悬浮按钮 */
-.hover-popover,
-.cm-toolbar,
-.obsidian-editor-toolbar,
-.canvas-node-toolbar {
-  display: none !important;
-}
-
-/* 渲染卡片全固定，阻止源码暴露 */
-.markdown-rendered .callout,
-.markdown-rendered .math-block {
-  user-select: text !important;
-}
-
-
-
-
-/* =======================================================
-    ✨ 公式字号、间距与“呼吸感”极致排版优化 (Math Spacing)
-   ======================================================= */
-
-/* 行内公式 ($...$) 与前后中文文本解耦留白 */
-.markdown-rendered .math-inline,
-.markdown-preview-view .math-inline,
-mjx-container:not([display="true"]),
-.katex:not(.katex-display) {
-  font-size: 1.05em !important;
-  margin: 0 4px !important;
-  padding: 0 2px !important;
-  vertical-align: -0.12em !important;
-  line-height: 1.2 !important;
-}
-
-/* 块级公式 ($$...$$) 独立展维与垂直黄金留白 */
-.markdown-rendered .math-block,
-.markdown-preview-view .math-block,
-.cm-embed-block.cm-math-panel,
-.cm-embed-block,
-.math-block,
-mjx-container[display="true"],
-.katex-display {
-  margin-top: 1.4em !important;
-  margin-bottom: 1.4em !important;
-  padding: 0.6em 0 !important;
-  font-size: 1.15em !important;
-  line-height: 1.4 !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-}
-
-/* 分式与上下标呼吸感 */
-mjx-frac {
-  padding: 0 2px !important;
-}
-
-mjx-sub, mjx-sup {
-  font-size: 0.82em !important;
-}
-
-/* 行内公式所在段落行高拉宽 */
-.markdown-rendered p:has(.math-inline),
-.markdown-rendered li:has(.math-inline) {
+.markdown-source-view.mod-cm6 .cm-line {
   line-height: 1.95 !important;
 }
 
-/* Additional reading rhythm for long-form revision notes. */
+.markdown-rendered p {
+  margin: 1.05em 0 1.15em !important;
+}
+
 .markdown-rendered h1,
 .markdown-rendered h2,
 .markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .cm-header {
+  line-height: 1.4 !important;
+  letter-spacing: 0 !important;
+}
+
+.markdown-rendered h1 {
+  margin: 0 0 1.6em !important;
+  font-size: 2em !important;
+}
+
+.markdown-rendered h2 {
+  margin: 2.7em 0 0.95em !important;
+  padding-bottom: 0.3em !important;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+  font-size: 1.5em !important;
+}
+
+.markdown-rendered h3 {
+  margin: 2.2em 0 0.75em !important;
+  font-size: 1.2em !important;
+}
+
 .markdown-rendered h4 {
-  margin-top: 1.8em !important;
-  margin-bottom: 0.75em !important;
-  line-height: 1.35 !important;
+  margin: 1.8em 0 0.6em !important;
+  font-size: 1.05em !important;
 }
 
 .markdown-rendered hr {
-  margin: 2.2em 0 !important;
-  opacity: 0.45;
+  margin: 3em 0 !important;
+  opacity: 0.45 !important;
 }
 
-.markdown-rendered img {
-  display: block;
-  max-width: min(92%, 900px) !important;
-  height: auto;
-  margin: 1.5em auto !important;
-  border-radius: 8px;
+/* Display math gets its own visual paragraph. */
+.markdown-rendered .math-block,
+.markdown-preview-view .math-block,
+.markdown-rendered mjx-container[display="true"],
+.markdown-preview-view mjx-container[display="true"],
+.markdown-source-view .cm-embed-block.cm-math-panel,
+.markdown-source-view .cm-embed-block.cm-math-block,
+.markdown-source-view .cm-embed-block:has(.math-block) {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 2.2em auto !important;
+  padding: 0.95em 0.75em !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  font-size: 1.2em !important;
+  line-height: 1.65 !important;
+  text-align: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.markdown-rendered .math-block mjx-container[display="true"],
+.markdown-preview-view .math-block mjx-container[display="true"] {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Give inline formulas enough air to remain readable in Chinese text. */
+.markdown-rendered .math-inline,
+.markdown-preview-view .math-inline,
+.markdown-rendered mjx-container:not([display="true"]),
+.markdown-preview-view mjx-container:not([display="true"]),
+.markdown-rendered .katex:not(.katex-display),
+.markdown-preview-view .katex:not(.katex-display) {
+  margin: 0 0.2em !important;
+  padding: 0 0.08em !important;
+  font-size: 1.08em !important;
+  line-height: 1.35 !important;
+  vertical-align: -0.08em !important;
+}
+
+.markdown-rendered mjx-frac {
+  padding: 0 0.08em !important;
+}
+
+.markdown-rendered mjx-sub,
+.markdown-rendered mjx-sup {
+  font-size: 0.84em !important;
 }
 
 .markdown-rendered ul,
 .markdown-rendered ol {
-  padding-left: 1.7em !important;
+  margin: 1.1em 0 1.4em !important;
+  padding-left: 1.8em !important;
+}
+
+.markdown-rendered li {
+  margin: 0.5em 0 !important;
+  padding-left: 0.15em !important;
+}
+
+.markdown-rendered li > p {
+  margin: 0.65em 0 !important;
+}
+
+.markdown-rendered blockquote {
+  margin: 1.8em 0 !important;
+  padding: 0.8em 1.25em !important;
+  line-height: 1.85 !important;
+  border-left-width: 4px !important;
+}
+
+.markdown-rendered table {
+  width: 100% !important;
+  margin: 2em 0 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  line-height: 1.75 !important;
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+  padding: 0.75em 0.9em !important;
+}
+
+.markdown-rendered pre {
+  margin: 1.8em 0 !important;
+  padding: 1.1em 1.25em !important;
+  line-height: 1.75 !important;
+  overflow-x: auto !important;
+}
+
+.markdown-rendered img {
+  display: block !important;
+  width: auto !important;
+  max-width: 96% !important;
+  height: auto !important;
+  margin: 2.2em auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.callout {
+  margin: 1.8em 0 !important;
+  padding: 1rem 1.25rem !important;
+  border-radius: 8px !important;
+  border-left-width: 4px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035) !important;
+}
+
+.callout-content,
+.callout-content p,
+.callout-content li {
+  line-height: 1.85 !important;
+}
+
+.callout-content p {
+  margin: 0.7em 0 1em !important;
+}
+
+.callout-content ul,
+.callout-content ol {
+  margin: 0.7em 0 1em !important;
+}
+
+mark {
+  padding: 0.08em 0.3em !important;
+  border-radius: 3px !important;
+  background: rgba(255, 213, 79, 0.42) !important;
+  color: inherit !important;
+  font-weight: 600 !important;
+}
+
+/* Keep the file tree readable while leaving the note body spacious. */
+.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner,
+.nav-folder.mod-root > .nav-folder-children > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-folder > .tree-item-self .tree-item-inner {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.nav-folder .tree-item-inner {
+  line-height: 1.55 !important;
+}
+
+.nav-file-title .nav-file-title-content,
+.tree-item.nav-file > .tree-item-self .tree-item-inner {
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 700px) {
+  .markdown-reading-view .markdown-preview-sizer,
+  .markdown-source-view.mod-cm6 .cm-content {
+    max-width: 100% !important;
+    padding: 1.5rem 1.1rem 4rem !important;
+  }
+
+  .markdown-rendered {
+    font-size: 15.5px !important;
+  }
+
+  .markdown-rendered h1 {
+    font-size: 1.7em !important;
+  }
+
+  .markdown-rendered .math-block,
+  .markdown-preview-view .math-block,
+  .markdown-rendered mjx-container[display="true"],
+  .markdown-preview-view mjx-container[display="true"] {
+    margin: 1.7em auto !important;
+    padding: 0.7em 0.25em !important;
+    font-size: 1.08em !important;
+  }
+
+  .markdown-rendered img {
+    max-width: 100% !important;
+    margin: 1.7em auto !important;
+  }
 }

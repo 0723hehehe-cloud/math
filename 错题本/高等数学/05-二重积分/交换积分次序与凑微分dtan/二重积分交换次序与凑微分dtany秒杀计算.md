@@ -15,14 +15,6 @@ $$
 I = \int_0^1 \frac{1}{3}x^{-\frac{2}{3}} dx \int_{\arctan x}^{\frac{\pi}{4}} \csc 2y \, dy
 $$
 
-
-
-
-
-
-
-
-
 ### ❌ 真实错因剖析
 
 **做错/卡壳原因**：**交换积分次序换限之后，外层积分不会积！**
@@ -32,27 +24,11 @@ $$
 I = \int_0^{\frac{\pi}{4}} \csc 2y \, dy \int_0^{\tan y} \frac{1}{3}x^{-\frac{2}{3}} dx = \int_0^{\frac{\pi}{4}} \csc 2y \cdot (\tan y)^{\frac{1}{3}} \, dy
 $$
 
-
-
-
-
-
-
-
-
 2. **凑微分恒等式**：利用 $\csc 2y = \frac{1}{2\sin y \cos y} = \frac{1}{2} \frac{\sec^2 y}{\tan y}$，凑出 $d(\tan y)$：
 
 $$
 I = \frac{1}{2} \int_0^{\frac{\pi}{4}} (\tan y)^{-\frac{2}{3}} \, d(\tan y) = \frac{1}{2} \int_0^1 u^{-\frac{2}{3}} du = \frac{3}{2}
 $$
-
-
-
-
-
-
-
-
 
 ### 解析与答案
 
@@ -63,14 +39,6 @@ $$
 D: \begin{cases} 0 \le x \le 1 \\ \arctan x \le y \le \frac{\pi}{4} \end{cases} \iff \begin{cases} 0 \le y \le \frac{\pi}{4} \\ 0 \le x \le \tan y \end{cases}
 $$
 
-
-
-
-
-
-
-
-
 。
 
 2. **先算内层对 $x$ 的积分**：
@@ -79,14 +47,6 @@ $$
 \int_0^{\tan y} \frac{1}{3} x^{-\frac{2}{3}} dx = \left[ x^{\frac{1}{3}} \right]_0^{\tan y} = (\tan y)^{\frac{1}{3}}
 $$
 
-
-
-
-
-
-
-
-
 3. **凑微分求外层积分**：
    因为 $\csc 2y = \frac{1}{\sin 2y} = \frac{1}{2\sin y \cos y} = \frac{\sec^2 y}{2\tan y}$，代入得：
 
@@ -94,27 +54,11 @@ $$
 I = \int_0^{\frac{\pi}{4}} \frac{\sec^2 y}{2\tan y} \cdot (\tan y)^{\frac{1}{3}} dy = \frac{1}{2} \int_0^{\frac{\pi}{4}} (\tan y)^{-\frac{2}{3}} \sec^2 y \, dy
 $$
 
-
-
-
-
-
-
-
-
    由 $\sec^2 y dy = d(\tan y)$，令 $u = \tan y$：
 
 $$
 I = \frac{1}{2} \int_0^1 u^{-\frac{2}{3}} du = \frac{1}{2} \left[ 3 u^{\frac{1}{3}} \right]_0^1 = \frac{3}{2}
 $$
-
-
-
-
-
-
-
-
 
 ### 易错点 & 核心考点
 

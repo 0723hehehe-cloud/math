@@ -15,14 +15,6 @@ $$
 I = \iint_D (1 - 12x^2 - y^2) dxdy = \text{______}
 $$
 
-
-
-
-
-
-
-
-
 。
 
 ![[images/media__1785499842986.png|题目图片]]
@@ -36,14 +28,6 @@ $$
 $$
 J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r \implies dxdy = \frac{1}{2}r \, dr d\theta
 $$
-
-
-
-
-
-
-
-
 
 3. **极速积为 0**：
    被积函数 $1 - 12x^2 - y^2 = 1 - r^2(2+\cos 2\theta)$，积分结果极速得出 **$0$**！
@@ -66,27 +50,11 @@ $$
 1 - 12x^2 - y^2 = 1 - 12\left(\frac{1}{4} r^2 \cos^2 \theta\right) - r^2 \sin^2 \theta = 1 - r^2 (3\cos^2 \theta + \sin^2 \theta)
 $$
 
-
-
-
-
-
-
-
-
    利用恒等式 $3\cos^2 \theta + \sin^2 \theta = 2\cos^2 \theta + 1 = 2 + \cos 2\theta$：
 
 $$
 = 1 - r^2 (2 + \cos 2\theta)
 $$
-
-
-
-
-
-
-
-
 
 3. **计算二重积分**：
 
@@ -94,41 +62,17 @@ $$
 I = \int_0^{\frac{\pi}{2}} d\theta \int_0^1 \left[ 1 - r^2 (2 + \cos 2\theta) \right] \cdot \frac{1}{2} r \, dr
 $$
 
-
-
-
-
-
-
-
-
    先算内层对 $r$ 的积分：
 
 $$
 \int_0^1 \left( \frac{1}{2} r - \frac{1}{2} r^3 (2 + \cos 2\theta) \right) dr = \frac{1}{4} - \frac{1}{8} (2 + \cos 2\theta) = -\frac{1}{8} \cos 2\theta
 $$
 
-
-
-
-
-
-
-
-
    外层对 $\theta$ 积分：
 
 $$
 I = \int_0^{\frac{\pi}{2}} \left( -\frac{1}{8} \cos 2\theta \right) d\theta = \left[ -\frac{1}{16} \sin 2\theta \right]_0^{\frac{\pi}{2}} = 0
 $$
-
-
-
-
-
-
-
-
 
 ### 易错点 & 核心考点
 

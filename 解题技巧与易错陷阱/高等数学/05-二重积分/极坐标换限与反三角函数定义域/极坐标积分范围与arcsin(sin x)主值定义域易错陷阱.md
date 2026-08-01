@@ -12,16 +12,8 @@ tags:
 设 $D: -1 \le x \le 0, \, 1 - \sqrt{1-x^2} \le y \le -x$，则
 
 $$
-I = \iint_D \frac{dxdy}{\sqrt{x^2+y^2} \sqrt{4-x^2-y^2}} = \text{______}
+I = \iint_{D} \frac{\,dx\,dy}{\sqrt{x^2+y^2}\,\sqrt{4-x^2-y^2}} = \text{______}
 $$
-
-
-
-
-
-
-
-
 
 ![[images/media__1785377023961.png|题目图片]]
 
@@ -46,27 +38,11 @@ $$
 \frac{3\pi}{4} \le \theta \le \pi, \quad 2\sin \theta \le r \le -\sec \theta
 $$
 
-
-
-
-
-
-
-
-
 2. **列极坐标积分与内层计算**：
 
 $$
 I = \int_{\frac{3\pi}{4}}^\pi d\theta \int_{2\sin \theta}^{-\sec \theta} \frac{dr}{\sqrt{4-r^2}} = \int_{\frac{3\pi}{4}}^\pi \left[ \arcsin\left(-\frac{\sec \theta}{2}\right) - \arcsin(\sin \theta) \right] d\theta
 $$
-
-
-
-
-
-
-
-
 
 3. **精准处理反三角主值与外层积分**：
    因 $\theta \in [\frac{3\pi}{4}, \pi]$，则 $\arcsin(\sin \theta) = \arcsin(\sin(\pi-\theta)) = \pi - \theta$。
@@ -75,14 +51,6 @@ $$
 $$
 I = \frac{\pi}{4} \ln(\sqrt{2}+1) - \frac{\pi^2}{32}
 $$
-
-
-
-
-
-
-
-
 
 ### 易错点 & 核心考点
 
