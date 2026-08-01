@@ -8,18 +8,18 @@ tags:
 # 二重变限积分平移换元与凑微分d[g(y)]求待定参数a
 
 > [!question] 题目
-> 设 $f(x)$ 是 $[0,1]$ 上的连续函数且其在 $[0,1]$ 上的平均值 $\bar{{f}} = \frac{{1}}{{2}}$，满足 $f(x) + a \int_1^x f(y) f(y-x) dy = 1$，求常数 $a$ 的值。
+> 设 $f(x)$ 是 $[0,1]$ 上的连续函数且其在 $[0,1]$ 上的平均值 $\bar{f} = \frac{1}{2}$，满足 $f(x) + a \int_1^x f(y) f(y-x) dy = 1$，求常数 $a$ 的值。
 >
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
 
 ![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
 
 > [!tip] ⚡ 秒杀法宝：【两端求积分 + 平移换元 + 凑微分 $dg(y)$】
-> 1. **平均值解码**：$\bar{{f}} = \int_0^1 f(x) dx = \frac{{1}}{{2}}$；
-> 2. **两端求积分**：$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = 1 \implies \frac{{1}}{{2}} - a I = 1 \implies a I = -\frac{{1}}{{2}}$；
-> 3. **内层平移换元**：交换次序后内层 $\int_0^y f(y-x) dx \xrightarrow{{t=y-x}} \int_0^y f(t) dt$；
+> 1. **平均值解码**：$\bar{f} = \int_0^1 f(x) dx = \frac{1}{2}$；
+> 2. **两端求积分**：$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = 1 \implies \frac{1}{2} - a I = 1 \implies a I = -\frac{1}{2}$；
+> 3. **内层平移换元**：交换次序后内层 $\int_0^y f(y-x) dx \xrightarrow{t=y-x} \int_0^y f(t) dt$；
 > 4. **变限积分凑微分**：设 $g(y) = \int_0^y f(t) dt \implies f(y) dy = dg(y)$！
->    $$I = \int_0^1 g(y) dg(y) = \frac{{1}}{{2}} g^2(1) = \frac{{1}}{{2}} \left(\frac{{1}}{{2}}\right)^2 = \frac{{1}}{{8}}$$
+>    $$I = \int_0^1 g(y) dg(y) = \frac{1}{2} g^2(1) = \frac{1}{2} \left(\frac{1}{2}\right)^2 = \frac{1}{8}$$
 >    瞬间得出 $a = -4$！
 
 > [!failure] ❌ 真实错因剖析
@@ -29,11 +29,11 @@ tags:
 
 > [!success] 解析与答案
 > 1. **两端取积分与方程关系**：
->    已知 $\int_0^1 f(x) dx = \frac{{1}}{{2}}$。
+>    已知 $\int_0^1 f(x) dx = \frac{1}{2}$。
 >    对 $f(x) - a \int_x^1 f(y)f(y-x) dy = 1$ 两端求积分：
 >    $$\int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = \int_0^1 1 \, dx = 1$$
 >    设 $I = \int_0^1 dx \int_x^1 f(y)f(y-x) dy$，则有：
->    $$\frac{{1}}{{2}} - a I = 1 \implies a I = -\frac{{1}}{{2}}$$
+>    $$\frac{1}{2} - a I = 1 \implies a I = -\frac{1}{2}$$
 >
 > 2. **交换积分次序与平移换元**：
 >    交换次序为先 $x$ 后 $y$：
@@ -45,13 +45,13 @@ tags:
 >
 > 3. **凑微分计算 $I$**：
 >    令 $g(y) = \int_0^y f(t) dt \implies dg(y) = f(y) dy$。
->    $g(0) = 0, g(1) = \int_0^1 f(t) dt = \frac{{1}}{{2}}$。
->    $$I = \int_0^1 g(y) \, dg(y) = \left[ \frac{{1}}{{2}} g^2(y) \right]_0^1 = \frac{{1}}{{2}} \left(\frac{{1}}{{2}}\right)^2 = \frac{{1}}{{8}}$$
+>    $g(0) = 0, g(1) = \int_0^1 f(t) dt = \frac{1}{2}$。
+>    $$I = \int_0^1 g(y) \, dg(y) = \left[ \frac{1}{2} g^2(y) \right]_0^1 = \frac{1}{2} \left(\frac{1}{2}\right)^2 = \frac{1}{8}$$
 >
 > 4. **求解常数 $a$**：
->    $$a \times \frac{{1}}{{8}} = -\frac{{1}}{{2}} \implies a = -4$$
+>    $$a \times \frac{1}{8} = -\frac{1}{2} \implies a = -4$$
 
 > [!warning] 易错点 & 核心考点
 > ⚠️ **避坑死穴与高频模型**：
-> 1. **平均值翻译**：$\bar{{f}} = \frac{{1}}{{b-a}} \int_a^b f(x) dx$。
-> 2. **二重积分凑微分模式**：遇 $\int_0^1 f(y) \left[\int_0^y f(t)dt\right] dy$ 必须自动触发凑微分 $g \, dg = \frac{{1}}{{2}} g^2(1)$！
+> 1. **平均值翻译**：$\bar{f} = \frac{1}{b-a} \int_a^b f(x) dx$。
+> 2. **二重积分凑微分模式**：遇 $\int_0^1 f(y) \left[\int_0^y f(t)dt\right] dy$ 必须自动触发凑微分 $g \, dg = \frac{1}{2} g^2(1)$！

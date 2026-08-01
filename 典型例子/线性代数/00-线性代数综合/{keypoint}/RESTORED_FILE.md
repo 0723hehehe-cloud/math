@@ -69,9 +69,9 @@ def clean_latex_blanks(text):
         return text
     text = re.sub(r'\\underline\{\\hspace\{[^}]+\}\}', '______', text)
     text = re.sub(r'\\underline\{[^}]*\}', '______', text)
-    text = re.sub(r'(?<!\\)\b\int_', r'\\int_', text)
-    text = re.sub(r'(?<!\\)\bint\^', r'\\int^', text)
-    text = re.sub(r'(?<!\\)\bint\{', r'\\int{', text)
+    text = re.sub(r'(?<!\\)\b\int_', r'\int_', text)
+    text = re.sub(r'(?<!\\)\bint\^', r'\int^', text)
+    text = re.sub(r'(?<!\\)\bint\{', r'\int{', text)
     text = re.sub(r'f\(t\),dt', r'f(t) dt', text)
     text = re.sub(r',dt\b', r' dt', text)
     return text
@@ -98,7 +98,7 @@ def build_note(data):
     
     img_path = data.get("image_path", "")
     img_url = "file:///" + img_path.replace("\\", "/") if img_path else ""
-    img_embed = f"![]({img_url})" if img_url else ""
+    img_embed = f"" if img_url else ""
 
     if note_type == "错题本":
         top_dir = "错题本"

@@ -14,7 +14,7 @@ tags:
 > - **核心错因**: 变限积分求导时，忘记了对 $x < 0$ 时 $\sqrt{x^2} = |x| = -x$ 进行讨论，遗漏了绝对值和负号。
 
 > [!question] 题目
-> 若函数 $y(x) = \int_2^{x^2} e^{-\sqrt{t}} dt$，则 $\left.\frac{d^2 y}{dx^2}\right|_{x=-1} =$ ________。
+> 若函数 $y(x) = \int_2^{x^2} e^{-\sqrt{t} dt$，则 $\left.\frac{d^2 y}{dx^2}\right|_{x=-1} =$ ________。
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1784772446145.png)
 
 > [!success] 解析与答案
@@ -24,8 +24,8 @@ tags:
 > 
 > **解析步骤**：
 > 
-> 1. **一阶求导（使用变限积分求导公式/莱布尼茨公式）**： $\displaystyle y'(x) = \frac{d}{dx} \left[ \int_2^{x^2} e^{-\sqrt{t}} dt \right]$
->    根据变限积分求导法则，将上限 $x^2$ 代入被积函数中的 $t$，并乘以上限对 $x$ 的导数： $\displaystyle y'(x) = e^{-\sqrt{x^2}} \cdot \frac{d}{dx}(x^2) = e^{-|x|} \cdot 2x$
+> 1. **一阶求导（使用变限积分求导公式/莱布尼茨公式）**： $\displaystyle y'(x) = \frac{d}{dx} \left[ \int_2^{x^2} e^{-\sqrt{t} dt \right]$
+>    根据变限积分求导法则，将上限 $x^2$ 代入被积函数中的 $t$，并乘以上限对 $x$ 的导数： $\displaystyle y'(x) = e^{-\sqrt{x^2} \cdot \frac{d}{dx}(x^2) = e^{-|x|} \cdot 2x$
 >    > [!important] 易错关键点
 >    > 根号下平方化简必须带绝对值：$\sqrt{x^2} = |x|$，而**绝不能**直接写成 $x$。
 > 
