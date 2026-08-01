@@ -32,13 +32,13 @@ $$\displaystyle \frac{d}{dx}(e^y) + e^y = \sin x$$
 令 $u = e^y$，则 $u' = e^y y'$，方程化为关于 $u(x)$ 的标准一阶线性微分方程：
 $$\displaystyle u' + u = \sin x$$
 
-积分因子为 $\mu(x) = e^{nt 1 \, dx} = e^x$。两边同乘 $e^x$ 得：
+积分因子为 $\mu(x) = e^{\int 1 \, dx} = e^x$。两边同乘 $e^x$ 得：
 $$\displaystyle (e^x u)' = e^x \sin x$$
 
 ### 3. 积分求解 $u(x)$ 倒推 $y(x)$
 两边对 $x$ 积分：
-$$\displaystyle e^x u = nt e^x \sin x \, dx$$
-利用标准积分公式 $nt e^x \sin x \, dx = \frac{1}{2} e^x (\sin x - \cos x) + C$：
+$$\displaystyle e^x u = \int e^x \sin x \, dx$$
+利用标准积分公式 $\int e^x \sin x \, dx = \frac{1}{2} e^x (\sin x - \cos x) + C$：
 $$\displaystyle e^x u = \frac{1}{2} e^x (\sin x - \cos x) + C$$
 
 两边同除以 $e^x$ 得：
@@ -55,4 +55,4 @@ $$\displaystyle y = \ln \left[ \frac{1}{2}(\sin x - \cos x) + C e^{-x} \right]$$
 ### 易错点 & 核心考点
 
 - **核心考点**: 凑全微分法、换元法化非线性微分方程为一阶线性方程。
-- **解题关键**: 看到方程中含有 $y'$ 与 $e^{-y}$，直接联想“同乘 $e^y$”；看到 $y'$ 与 $y^n$（一阶非线性微分方程（换元法）），直接联想“同乘 $y^{-n}$”。 - **易错点**: 硬去分离变量导致分母 $e^{-y}\sin x - 1$ 无法积分；积分 $nt e^x \sin x dx$ 时忘记系数 $\frac{1}{2}$。
+- **解题关键**: 看到方程中含有 $y'$ 与 $e^{-y}$，直接联想“同乘 $e^y$”；看到 $y'$ 与 $y^n$（一阶非线性微分方程（换元法）），直接联想“同乘 $y^{-n}$”。 - **易错点**: 硬去分离变量导致分母 $e^{-y}\sin x - 1$ 无法积分；积分 $\int e^x \sin x dx$ 时忘记系数 $\frac{1}{2}$。
