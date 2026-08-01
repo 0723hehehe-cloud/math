@@ -115,19 +115,22 @@ tags:
 
 # {title}
 
-> [!question] 题目
-> {q_text}
-> 
-> {img_embed}
+### 题目
 
-> [!tip] ⚡ 秒杀法宝
-> {key_method}
+{q_text}
 
-> [!failure] ❌ 真实错因剖析
-> {pitfalls}
+{img_embed}
 
-> [!success] 解析与答案
-> {analysis}
+### ⚡ 秒杀法宝
+
+{key_method}
+
+[!failure] ❌ 真实错因剖析
+{pitfalls}
+
+### 解析与答案
+
+{analysis}
 """
         if answer:
             md += f"\n> **【最终答案】**：{answer}\n"
@@ -146,16 +149,18 @@ tags:
 
 # {title}
 
-> [!example] 📖 经典范例原题
-> {q_text}
-> 
-> {img_embed}
+[!example] 📖 经典范例原题
+{q_text}
 
-> [!tip] ⚡ 核心解题思路与范例总结
-> {key_method}
+{img_embed}
 
-> [!success] 详细推导步骤
-> {analysis}
+### ⚡ 核心解题思路与范例总结
+
+{key_method}
+
+### 详细推导步骤
+
+{analysis}
 """
     else:
         top_dir = "知识点"
@@ -171,16 +176,17 @@ tags:
 
 # {title}
 
-> [!info] 概念定义
-> {definition}
-> 
-> {img_embed}
+[!info] 概念定义
+{definition}
 
-> [!todo] 核心公式与定理
-> {formulas}
+{img_embed}
 
-> [!tip] 考点结论与秒杀小技巧
-> {conclusions}
+[!todo] 核心公式与定理
+{formulas}
+
+### 考点结论与秒杀小技巧
+
+{conclusions}
 """
 
     target_path = os.path.join(vault_root, top_dir, subject, chapter, keypoint, f"{title}.md")
