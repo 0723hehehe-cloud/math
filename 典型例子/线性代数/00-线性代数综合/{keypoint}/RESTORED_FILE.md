@@ -126,6 +126,7 @@ tags:
 {key_method}
 
 [!failure] ❌ 真实错因剖析
+
 {pitfalls}
 
 ### 解析与答案
@@ -150,6 +151,7 @@ tags:
 # {title}
 
 [!example] 📖 经典范例原题
+
 {q_text}
 
 {img_embed}
@@ -177,11 +179,13 @@ tags:
 # {title}
 
 [!info] 概念定义
+
 {definition}
 
 {img_embed}
 
 [!todo] 核心公式与定理
+
 {formulas}
 
 ### 考点结论与秒杀小技巧
