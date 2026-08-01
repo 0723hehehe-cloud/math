@@ -2,6 +2,7 @@
 type: 错题本
 tags:
   - 错题本/高等数学/03-一元函数积分学/变限积分方程与凑微分dgy/二重变限积分换元与凑微分dgy求待定参数a
+
 ---
 
 # 二重变限积分平移换元与凑微分d[g(y)]求待定参数a
@@ -10,9 +11,9 @@ tags:
 
 设 $f(x)$ 是 $[0,1]$ 上的连续函数且其在 $[0,1]$ 上的平均值 $\bar{f} = \frac{1}{2}$，满足 $f(x) + a \int_1^x f(y) f(y-x) dy = 1$，求常数 $a$ 的值。
 
-![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
+![[images/media__1785492363087.png|题目图片]]
 
-![题目图片](file:///D:/ob/考研数学/.images/media__1785492363087.png)
+![[images/media__1785492363087.png|题目图片]]
 
 ### ⚡ 秒杀法宝：【两端求积分 + 平移换元 + 凑微分 $dg(y)$】 1. **平均值解码**：$\bar{f} = \int_0^1 f(x) dx = \frac{1}{2}$；
 
@@ -23,6 +24,14 @@ tags:
 $$
 I = \int_0^1 g(y) dg(y) = \frac{1}{2} g^2(1) = \frac{1}{2} \left(\frac{1}{2}\right)^2 = \frac{1}{8}
 $$
+
+
+
+
+
+
+
+
 
    瞬间得出 $a = -4$！
 
@@ -39,11 +48,27 @@ $$
 \int_0^1 f(x) dx - a \int_0^1 dx \int_x^1 f(y)f(y-x) dy = \int_0^1 1 \, dx = 1
 $$
 
+
+
+
+
+
+
+
+
    设 $I = \int_0^1 dx \int_x^1 f(y)f(y-x) dy$，则有：
 
 $$
 \frac{1}{2} - a I = 1 \implies a I = -\frac{1}{2}
 $$
+
+
+
+
+
+
+
+
 
 2. **交换积分次序与平移换元**：
    交换次序为先 $x$ 后 $y$：
@@ -52,11 +77,27 @@ $$
 I = \int_0^1 dy \int_0^y f(y)f(y-x) dx = \int_0^1 f(y) dy \int_0^y f(y-x) dx
 $$
 
+
+
+
+
+
+
+
+
    内层令 $t = y - x \implies dx = -dt$：
 
 $$
 \int_0^y f(y-x) dx = \int_0^y f(t) dt
 $$
+
+
+
+
+
+
+
+
 
    故：
 
@@ -64,17 +105,41 @@ $$
 I = \int_0^1 f(y) \left[ \int_0^y f(t) dt \right] dy
 $$
 
+
+
+
+
+
+
+
+
 3. **凑微分计算 $I$**： 令 $g(y) = \int_0^y f(t) dt \implies dg(y) = f(y) dy$。  $g(0) = 0, g(1) = \int_0^1 f(t) dt = \frac{1}{2}$。
 
 $$
 I = \int_0^1 g(y) \, dg(y) = \left[ \frac{1}{2} g^2(y) \right]_0^1 = \frac{1}{2} \left(\frac{1}{2}\right)^2 = \frac{1}{8}
 $$
 
+
+
+
+
+
+
+
+
 4. **求解常数 $a$**：
 
 $$
 a \times \frac{1}{8} = -\frac{1}{2} \implies a = -4
 $$
+
+
+
+
+
+
+
+
 
 ### 易错点 & 核心考点
 

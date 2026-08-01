@@ -2,6 +2,7 @@
 type: 解题技巧与易错陷阱
 tags:
   - 解题技巧与易错陷阱/高等数学/05-二重积分/极坐标换限与反三角函数定义域/极坐标积分范围与arcsinsin x主值定义域易错陷阱
+
 ---
 
 # 极坐标积分范围与arcsin(sin x)主值定义域易错陷阱
@@ -14,11 +15,20 @@ $$
 I = \iint_D \frac{dxdy}{\sqrt{x^2+y^2} \sqrt{4-x^2-y^2}} = \text{______}
 $$
 
-![题目图片](file:///D:/ob/考研数学/.images/media__1785377023961.png)
+
+
+
+
+
+
+
+
+![[images/media__1785377023961.png|题目图片]]
 
 ### ⚡ 秒杀法宝：【反三角主值范围 + 负坐标轴极坐标方程】
 
-1. **$\arcsin(\sin \theta)$ 的第二象限主值**：当 $\theta \in [\frac{3\pi}{4}, \pi]$ 在第二象限时，必须使用诱导公式化简为 **$\arcsin(\sin \theta) = \pi - \theta$**（切勿盲目脱去符号写成 $\theta$）！ 2. **负坐标轴直线极坐标方程**：在第二象限，$x = -1$ 的极坐标方程为 **$r = -\sec \theta$**（因 $\cos \theta < 0$，加负号保证半径 $r > 0$）！
+1. **$\arcsin(\sin \theta)$ 的第二象限主值**：当 $\theta \in [\frac{3\pi}{4}, \pi]$ 在第二象限时，必须使用诱导公式化简为 **$\arcsin(\sin \theta) = \pi - \theta$**（切勿盲目脱去符号写成 $\theta$）！
+2. **负坐标轴直线极坐标方程**：在第二象限，$x = -1$ 的极坐标方程为 **$r = -\sec \theta$**（因 $\cos \theta < 0$，加负号保证半径 $r > 0$）！
 
 ### ❌ 真实错因剖析
 
@@ -36,11 +46,27 @@ $$
 \frac{3\pi}{4} \le \theta \le \pi, \quad 2\sin \theta \le r \le -\sec \theta
 $$
 
+
+
+
+
+
+
+
+
 2. **列极坐标积分与内层计算**：
 
 $$
 I = \int_{\frac{3\pi}{4}}^\pi d\theta \int_{2\sin \theta}^{-\sec \theta} \frac{dr}{\sqrt{4-r^2}} = \int_{\frac{3\pi}{4}}^\pi \left[ \arcsin\left(-\frac{\sec \theta}{2}\right) - \arcsin(\sin \theta) \right] d\theta
 $$
+
+
+
+
+
+
+
+
 
 3. **精准处理反三角主值与外层积分**：
    因 $\theta \in [\frac{3\pi}{4}, \pi]$，则 $\arcsin(\sin \theta) = \arcsin(\sin(\pi-\theta)) = \pi - \theta$。
@@ -49,6 +75,14 @@ $$
 $$
 I = \frac{\pi}{4} \ln(\sqrt{2}+1) - \frac{\pi^2}{32}
 $$
+
+
+
+
+
+
+
+
 
 ### 易错点 & 核心考点
 
