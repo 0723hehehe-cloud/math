@@ -12,7 +12,7 @@ tags:
 >
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785498465403.png)
 
-> [!tip] ⚡ 秒杀法宝：【极坐标 ⟹ 交换次序（先 $\theta$ 后 $r$） ⟹ 凑微分 $d(\sin 2\theta)$】 1. **三角恒等转换**：$(x+y)^2 = r^2(1+\sin 2\theta)$，$x^2-y^2 = r^2 \cos 2\theta$； 2. **交换次序化简**：转为先对 $\theta$ 积分：$I = \int_0^1 r^3 dr \int_0^{\frac{\pi}{4} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta$； 3. **凑微分秒杀**：内层凑微分 $\frac{1}{2r^2} d[r^2(1+\sin 2\theta)]$，把内层瞬间积出为 $\frac{1}{2r^2}(e^{2r^2}-e^{r^2})$，外层直接转化为 $\frac{1}{4} \int_0^1 (e^{2u}-e^u) du = \mathbf{\frac{(e-1)^2}{8}$！
+> [!tip] ⚡ 秒杀法宝：【极坐标 ⟹ 交换次序（先 $\theta$ 后 $r$） ⟹ 凑微分 $d(\sin 2\theta)$】 1. **三角恒等转换**：$(x+y)^2 = r^2(1+\sin 2\theta)$，$x^2-y^2 = r^2 \cos 2\theta$； 2. **交换次序化简**：转为先对 $\theta$ 积分：$I = \int_0^1 r^3 dr \int_0^{\frac{\pi}{4}} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta$； 3. **凑微分秒杀**：内层凑微分 $\frac{1}{2r^2} d[r^2(1+\sin 2\theta)]$，把内层瞬间积出为 $\frac{1}{2r^2}(e^{2r^2}-e^{r^2})$，外层直接转化为 $\frac{1}{4} \int_0^1 (e^{2u}-e^u) du = \mathbf{\frac{(e-1)^2}{8}}$！
 
 > [!failure] ❌ 真实错因剖析
 > **做错/卡壳原因**：**直接硬算计算量极大死掉！**
@@ -22,9 +22,9 @@ tags:
 > 1. **转极坐标与化简被积函数**：
 >    区域 $D: 0 \le \theta \le \frac{\pi}{4}, 0 \le r \le 1$。  $(x+y)^2 = r^2(1+\sin 2\theta)$， $x^2-y^2 = r^2 \cos 2\theta$， $dxdy = r dr d\theta$。  $$I = \int_0^{\frac{\pi}{4} \cos 2\theta d\theta \int_0^1 r^3 e^{r^2(1+\sin 2\theta)} dr$$
 >
-> 2. **交换积分次序（先对 $\theta$ 积分）**：  $$I = \int_0^1 r^3 dr \int_0^{\frac{\pi}{4} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta$$
+> 2. **交换积分次序（先对 $\theta$ 积分）**：  $$I = \int_0^1 r^3 dr \int_0^{\frac{\pi}{4}} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta$$
 >
-> 3. **内层凑微分 $d(\sin 2\theta)$**：  $$\int_0^{\frac{\pi}{4} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta = \frac{1}{2r^2} \int_0^{\frac{\pi}{4} e^{r^2(1+\sin 2\theta)} d[r^2(1+\sin 2\theta)]$$
+> 3. **内层凑微分 $d(\sin 2\theta)$**：  $$\int_0^{\frac{\pi}{4}} e^{r^2(1+\sin 2\theta)} \cos 2\theta d\theta = \frac{1}{2r^2} \int_0^{\frac{\pi}{4}} e^{r^2(1+\sin 2\theta)} d[r^2(1+\sin 2\theta)]$$
 >    代入上下限 $\theta = 0 \to r^2$, $\theta = \frac{\pi}{4} \to 2r^2$：  $$= \frac{1}{2r^2} (e^{2r^2} - e^{r^2})$$
 >
 > 4. **外层求积分得出结果**：

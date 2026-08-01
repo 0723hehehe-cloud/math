@@ -33,9 +33,9 @@ tags:
 >    利用恒等式 $3\cos^2 \theta + \sin^2 \theta = 2\cos^2 \theta + 1 = 2 + \cos 2\theta$：  $$= 1 - r^2 (2 + \cos 2\theta)$$
 >
 > 3. **计算二重积分**：
->    $$I = \int_0^{\frac{\pi}{2} d\theta \int_0^1 \left[ 1 - r^2 (2 + \cos 2\theta) \right] \cdot \frac{1}{2} r \, dr$$
+>    $$I = \int_0^{\frac{\pi}{2}} d\theta \int_0^1 \left[ 1 - r^2 (2 + \cos 2\theta) \right] \cdot \frac{1}{2} r \, dr$$
 >    先算内层对 $r$ 的积分：  $$\int_0^1 \left( \frac{1}{2} r - \frac{1}{2} r^3 (2 + \cos 2\theta) \right) dr = \frac{1}{4} - \frac{1}{8} (2 + \cos 2\theta) = -\frac{1}{8} \cos 2\theta$$
->    外层对 $\theta$ 积分：  $$I = \int_0^{\frac{\pi}{2} \left( -\frac{1}{8} \cos 2\theta \right) d\theta = \left[ -\frac{1}{16} \sin 2\theta \right]_0^{\frac{\pi}{2} = 0$$
+>    外层对 $\theta$ 积分：  $$I = \int_0^{\frac{\pi}{2}} \left( -\frac{1}{8} \cos 2\theta \right) d\theta = \left[ -\frac{1}{16} \sin 2\theta \right]_0^{\frac{\pi}{2}} = 0$$
 
 > [!warning] 易错点 & 核心考点
 > ⚠️ **雅可比行列式避坑死穴**：
