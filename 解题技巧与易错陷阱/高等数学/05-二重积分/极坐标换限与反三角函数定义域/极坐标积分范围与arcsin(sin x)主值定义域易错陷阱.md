@@ -17,7 +17,7 @@ tags:
 1. **$\arcsin(\sin \theta)$ 的第二象限主值**：当 $\theta \in [\frac{3\pi}{4}, \pi]$ 在第二象限时，必须使用诱导公式化简为 **$\arcsin(\sin \theta) = \pi - \theta$**（切勿盲目脱去符号写成 $\theta$）！ 2. **负坐标轴直线极坐标方程**：在第二象限，$x = -1$ 的极坐标方程为 **$r = -\sec \theta$**（因 $\cos \theta < 0$，加负号保证半径 $r > 0$）！
 
 [!failure] ❌ 真实错因剖析
-**做错核心原因**：**没注意反三角函数 $\arcsin$ 的主值范围！** 在计算内层积分 $\int \frac{dr}{\sqrt{4-r^2} = \arcsin\frac{r}{2}$ 并代入下限 $r = 2\sin \theta$ 时，把 $\arcsin(\sin \theta)$ 错写成了 $\theta$。 忽视了当 $\theta \in [\frac{3\pi}{4}, \pi]$ 时，$\theta$ 已经超出了 $\arcsin$ 的主值范围 $[-\frac{\pi}{2}, \frac{\pi}{2}]$，正确化简应当是 $\arcsin(\sin \theta) = \pi - \theta$！
+**做错核心原因**：**没注意反三角函数 $\arcsin$ 的主值范围！** 在计算内层积分 $\int \frac{dr}{\sqrt{4-r^2}} = \arcsin\frac{r}{2}$ 并代入下限 $r = 2\sin \theta$ 时，把 $\arcsin(\sin \theta)$ 错写成了 $\theta$。 忽视了当 $\theta \in [\frac{3\pi}{4}, \pi]$ 时，$\theta$ 已经超出了 $\arcsin$ 的主值范围 $[-\frac{\pi}{2}, \frac{\pi}{2}]$，正确化简应当是 $\arcsin(\sin \theta) = \pi - \theta$！
 
 ### 解析与答案
 
