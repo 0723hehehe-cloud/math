@@ -13,11 +13,11 @@ tags:
 > ![题目图片](file:///D:/ob/考研数学/.images/media__1785499842986.png)
 
 > [!tip] ⚡ 秒杀法宝：【广义极坐标 + 雅可比行列式 $J = 
-rac{1}{2}r$ 秒杀】
+\frac{1}{2}r$ 秒杀】
 > 1. **广义极坐标代换**：
 >    对椭圆 $4x^2 + y^2 < 1$（即 $\frac{x^2}{(1/2)^2} + y^2 < 1$），令 $x = \frac{1}{2} r \cos \theta, \, y = r \sin \theta$；
 > 2. **雅可比行列式微元**：
->    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = \frac{1}{2}r \implies dxdy = \frac{1}{2}r \, dr d\theta$$
+>    $$J = \frac{\partial(x,y)}{\partial(r,\theta)} = \begin{\vmatrix} \frac{1}{2}\cos\theta & -\frac{1}{2}r\sin\theta \\ \sin\theta & r\cos\theta \end{\vmatrix} = \frac{1}{2}r \implies dxdy = \frac{1}{2}r \, dr d\theta$$
 > 3. **极速积为 0**：
 >    被积函数 $1 - 12x^2 - y^2 = 1 - r^2(2+\cos 2\theta)$，积分结果极速得出 **$0$**！
 
@@ -29,7 +29,7 @@ rac{1}{2}r$ 秒杀】
 > [!success] 解析与答案
 > 1. **建立广义极坐标与雅可比行列式**：
 >    区域 $D$ 是第一象限椭圆域 $\frac{x^2}{(1/2)^2} + y^2 < 1, x \ge 0, y \ge 0$。
->    令 $x = \frac{1}{2} r \cos \theta, y = r \sin 	heta$，此时范围为 $0 \le \theta \le \frac{\pi}{2}, 0 \le r < 1$。
+>    令 $x = \frac{1}{2} r \cos \theta, y = r \sin \theta$，此时范围为 $0 \le \theta \le \frac{\pi}{2}, 0 \le r < 1$。
 >    面积微元：$dxdy = \frac{1}{2} r \, dr d\theta$。
 >
 > 2. **代入被积函数**：

@@ -21,12 +21,12 @@ DEFAULT_VAULT = "D:/ob/考研数学"
 
 def get_standard_chapter(raw_text, subject="高等数学"):
     if subject == "线性代数":
-        if any(k in raw_text for k in ["行列式"]): return "01-行列式"
-        if any(k in raw_text for k in ["矩阵"]): return "02-矩阵"
-        if any(k in raw_text for k in ["向量"]): return "03-向量"
-        if any(k in raw_text for k in ["方程组"]): return "04-线性方程组"
-        if any(k in raw_text for k in ["特征值", "特征向量", "相似"]): return "05-特征值与特征向量"
-        if any(k in raw_text for k in ["二次型"]): return "06-二次型"
+        if any(k in raw_text for k \in ["行列式"]): return "01-行列式"
+        if any(k in raw_text for k \in ["矩阵"]): return "02-矩阵"
+        if any(k in raw_text for k \in ["向量"]): return "03-向量"
+        if any(k in raw_text for k \in ["方程组"]): return "04-线性方程组"
+        if any(k in raw_text for k \in ["特征值", "特征向量", "相似"]): return "05-特征值与特征向量"
+        if any(k in raw_text for k \in ["二次型"]): return "06-二次型"
         return "00-线性代数综合"
     
     # 高等数学 Chapters keyword mapping
