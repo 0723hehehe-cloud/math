@@ -12,7 +12,7 @@ tags:
 设 $D: -1 \le x \le 0, \, 1 - \sqrt{1-x^2} \le y \le -x$，则
 
 $$
-I = \iint_{D} \frac{\,dx\,dy}{\sqrt{x^2+y^2}\,\sqrt{4-x^2-y^2}} = \text{______}
+I = \iint_{D} \frac{\,dx\,dy}{\sqrt{x^2+y^2}\,\sqrt{4-x^2-y^2}} = \underline{\quad\quad}
 $$
 
 ![[images/media__1785377023961.png|题目图片]]

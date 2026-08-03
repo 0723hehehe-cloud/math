@@ -14,7 +14,7 @@ source: 张宇1000题
 
 ### 题目
 
-若函数 $y(x) = \int_2^{x^2} e^{-\sqrt{t}} dt$，则 $\left.\frac{d^2 y}{dx^2}\right|_{x=-1} =$ ________。
+若函数 $y(x) = \int_2^{x^2} e^{-\sqrt{t}} dt$，则 $\left.\frac{d^2 y}{dx^2}\right|_{x=-1} =$ \underline{\quad\quad}__。
 
 ![[images/media__1784772446145.png|题目图片]]
 

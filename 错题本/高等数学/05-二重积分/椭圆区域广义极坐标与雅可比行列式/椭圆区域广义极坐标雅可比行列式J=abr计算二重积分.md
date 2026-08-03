@@ -12,7 +12,7 @@ tags:
 设 $D = \{(x,y) \mid 4x^2 + y^2 < 1, \, x \ge 0, \, y \ge 0\}$，则积分
 
 $$
-I = \iint_D (1 - 12x^2 - y^2) dxdy = \text{______}
+I = \iint_D (1 - 12x^2 - y^2) dxdy = \underline{\quad\quad}
 $$
 
 。
